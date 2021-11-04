@@ -8,27 +8,29 @@ public class boj_1260_DFS와BFS {
     public static int[][] arr;
     public static boolean[] visited;
 
+    // 인접행렬 풀이
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int M = sc.nextInt();
+        int M = sc.nextInt(); // 간선의 수
         int V = sc.nextInt();
 
-        arr = new int[N+1][M+1];
+        arr = new int[N+1][N+1]; // n으로 이중배열 선언
 
         for (int i = 0; i < M; i++) {
             int a = sc.nextInt();
             int b = sc.nextInt();
             arr[a][b] = arr[b][a] = 1;
         }
-
-        for (int i = 1; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                System.out.print(arr[i][j]);
-            }
-            System.out.println();
-
-        }
+//      행렬 보기
+//        for (int i = 1; i < arr.length; i++) {
+//            for (int j = 0; j < arr.length; j++) {
+//                System.out.print(arr[i][j]);
+//            }
+//            System.out.println();
+//
+//        }
 
         visited = new boolean[N+1];
         dfs(V);
