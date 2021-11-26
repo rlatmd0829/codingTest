@@ -49,7 +49,7 @@ public class boj_1753_최단경로 {
         }
         StringBuilder sb = new StringBuilder();
         dijkstra(k);
-        for (int i = 0; i < v; i++) {
+        for (int i = 1; i <= v; i++) {
             if (dist[i] == INF) sb.append("INF\n");
             else sb.append(dist[i] + "\n");
         }
