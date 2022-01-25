@@ -1,4 +1,4 @@
-package November;
+package past.November;
 
 public class pro_2020카카오_외벽점검 {
     public int n, min;

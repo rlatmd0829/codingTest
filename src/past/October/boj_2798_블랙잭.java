@@ -1,4 +1,4 @@
-package October;
+package past.October;
 import java.util.Scanner;
 
 public class boj_2798_블랙잭 {

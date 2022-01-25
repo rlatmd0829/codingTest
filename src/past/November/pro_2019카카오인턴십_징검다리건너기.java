@@ -1,4 +1,4 @@
-package November;
+package past.November;
 
 public class pro_2019카카오인턴십_징검다리건너기 {
     public static int solution(int[] stones, int k){

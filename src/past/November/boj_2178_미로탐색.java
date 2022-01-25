@@ -1,11 +1,10 @@
-package November;
+package past.November;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class boj_2178_미로탐색 {

@@ -1,4 +1,4 @@
-package November;
+package past.November;
 
 public class pro_2019카카오인턴십_불량사용자 {
     public int solution(String[] user_id, String[] banned_id) {
