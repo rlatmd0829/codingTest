@@ -28,6 +28,7 @@ public class pro_L2_joystick {
                 } else {
                     count += Math.abs(i - cur);
                 }
+
                 cur = i;
             } else if (c[i] == 'A') {
             }
