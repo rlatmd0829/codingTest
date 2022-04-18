@@ -18,6 +18,7 @@ public class boj_11656 {
                 temp.append(c[j]);
             }
             list.add(temp.toString());
+
         }
         Collections.sort(list);
         for (String s1 : list) {
