@@ -13,6 +13,7 @@ public class boj_14425 {
 		for (int i = 0; i < N; i++) {
 			arr[i] = sc.next();
 		}
+
 		for (int i = 0; i < M; i++) {
 			check[i] = sc.next();
 		}
