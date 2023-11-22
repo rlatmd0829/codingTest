@@ -17,24 +17,24 @@ class Solution {
 
 		for (int i = 0; i < survey.length; i++) {
 			if (choices[i] < 4) {
-				int target = 0;
+				int score = 0;
 				if (choices[i] == 1) {
-					target = 3;
+					score = 3;
 				}
 				if (choices[i] == 2) {
-					target = 2;
+					score = 2;
 				}
 				if (choices[i] == 3) {
-					target = 1;
+					score = 1;
 				}
-				String a = String.valueOf(survey[i].charAt(0));
-				int val = map.get(a);
-				map.put(a, val + target);
+				String first = String.valueOf(survey[i].charAt(0));
+				int value = map.get(first);
+				map.put(first, value + score);
 			} else if (choices[i] > 4) {
-				int target = choices[i] - 4;
-				String a = String.valueOf(survey[i].charAt(1));
-				int val = map.get(a);
-				map.put(a, val + target);
+				int score = choices[i] - 4;
+				String second = String.valueOf(survey[i].charAt(1));
+				int value = map.get(second);
+				map.put(second, value + score);
 			}
 		}
 
