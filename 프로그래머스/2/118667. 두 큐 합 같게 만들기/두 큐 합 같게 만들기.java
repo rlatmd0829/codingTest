@@ -41,13 +41,13 @@ class Solution {
 		}
 
 		while (true) {
-			if (totalQ2 < half) {
+			if (totalQ1 > totalQ2) {
 				long pop = q1.poll();
 				totalQ1 -= pop;
 				totalQ2 += pop;
 				q2.add(pop);
 				answer++;
-			} else if (totalQ1 < half) {
+			} else if (totalQ1 < totalQ2) {
 				long pop = q2.poll();
 				totalQ1 += pop;
 				totalQ2 -= pop;
