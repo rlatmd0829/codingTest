@@ -27,15 +27,12 @@ class Solution {
 				int d = Math.abs(nx - r) + Math.abs(ny - c);
 				if (0 < nx && 0 < ny && nx <= n && ny <= m) {
 					if (k - cnt >= d && (k - cnt - d) % 2 == 0) {
+						String result = node.result + dc[i];
 						if (node.result.length() < k) {
-							queue.add(new Node(nx, ny, node.result + dc[i]));
+							queue.add(new Node(nx, ny, result));
 						}
-						if (nx == r && ny == c) {
-							String result = node.result + dc[i];
-							if ((result).length() == k) {
-								resultList.add(result);
-							}
-							// break;
+						if (nx == r && ny == c && k == result.length()) {
+							resultList.add(result);
 						}
 						break;
 					}
