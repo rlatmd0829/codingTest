@@ -1,5 +1,6 @@
 package N_2022.April;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class boj_2525 {
@@ -21,5 +22,15 @@ public class boj_2525 {
             hour = hour % 24;
         }
         System.out.println(hour + " " + B);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }
