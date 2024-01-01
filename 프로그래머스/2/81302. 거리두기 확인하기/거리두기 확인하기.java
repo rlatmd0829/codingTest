@@ -17,12 +17,13 @@ class Solution {
 				chars[j] = places[i][j].toCharArray();
 			}
 			int cnt = 0;
+			loop:
 			for (int j = 0; j < places[i].length; j++) {
 				for (int k = 0; k < chars[j].length; k++) {
 					if (chars[j][k] == 'P') {
 						boolean check = bfs(chars, j, k);
 						if (!check) {
-							break;
+							break loop;
 						}
 					}
 					cnt++;
@@ -40,10 +41,8 @@ class Solution {
 	}
 
 	public boolean bfs(char[][] chars, int x, int y) {
-		boolean[][] visited = new boolean[5][5];
 		Queue<int[]> queue = new LinkedList<>();
 		queue.add(new int[] {x, y});
-		visited[x][y] = true;
 
 		while (!queue.isEmpty()) {
 			int q[] = queue.poll();
