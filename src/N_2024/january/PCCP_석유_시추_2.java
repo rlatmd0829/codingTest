@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Queue;
 
-public class PCCP_석유_시추 {
+public class PCCP_석유_시추_2 {
 	static int[] dx = {-1, 1, 0, 0};
 	static int[] dy = {0, 0, -1, 1};
 	static boolean[][] visited;
