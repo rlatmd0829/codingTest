@@ -43,6 +43,13 @@ public class kakao_순위검색_2 {
 				if (Integer.parseInt(infoString[mid][1]) > Integer.parseInt(rightQueryString)) {
 					rt = mid - 1;
 					mid = lt + rt / 2;
+
+				} else if (Integer.parseInt(infoString[mid][1]) < Integer.parseInt(rightQueryString)) {
+					lt = mid + 1;
+					mid = lt + rt / 2;
+				} else {
+					break;
+
 				}
 			}
 		}
