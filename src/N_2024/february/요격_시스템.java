@@ -12,15 +12,13 @@ public class 요격_시스템 {
 		int answer = 0;
 
 		Arrays.sort(targets, (o1, o2) -> o1[1] - o2[1]);
-
-		for (int[] target : targets) {
-			System.out.println(Arrays.toString(target));
-		}
+		// [[1, 4], [4, 5], [3, 7], [4, 8], [5, 12], [11, 13], [10, 14]]
 
 		int before = 0;
 		for(int i=0;i<targets.length;i++){
+			// 이전 타겟과 겹치지 않는다면 현재 타겟을 선택
 			if(before <= targets[i][0]){
-				before = targets[i][1];
+				before = targets[i][1]; // 현재 타켓에 끝점을 넣음
 				answer++;
 			}
 		}
