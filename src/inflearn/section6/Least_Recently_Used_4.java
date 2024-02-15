@@ -18,7 +18,7 @@ public class Least_Recently_Used_4 {
 			int pos = -1;
 			for (int i = 0; i < S; i++) {
 				if (x == cache[i]) {
-					pos = i; // hit
+					pos = i;
 				}
 			}
 			if (pos == -1) { // miss
